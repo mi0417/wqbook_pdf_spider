@@ -1,8 +1,13 @@
 from PIL import Image
+from os import makedirs
+from os.path import exists
 
-PAGES = 320 #总页数
+PAGES = 416 #总页数
 SPLIT = 6 #等分数
 sub_image_dir = 'temp/' #爬下的子图所在的文件夹路径
+save_dir = 'out/' #保存的文件夹路径
+
+
 
 def get_file_names(page_number, split=SPLIT):
     '''
@@ -38,8 +43,13 @@ def merge(image_list):
 
     return ret
 
+def create_directory(directory):
+    if not exists(directory):
+        makedirs(directory)
+        print(f"创建目录: {directory}")
 
 image_list = []
+create_directory(save_dir)
 
 for page_number in range(1, PAGES + 1):
     names = get_file_names(page_number)
@@ -48,5 +58,8 @@ for page_number in range(1, PAGES + 1):
     for file_name in names:
         image_list.append(Image.open(sub_image_dir + file_name))
 
+    print(f'正在合并第{page_number}页')
     merged_image = merge(image_list)
-    merged_image.save(f'{page_number}.png')
+    merged_image.save(f'{save_dir}{page_number}.webp')
+
+print('完成')

@@ -1,3 +1,5 @@
+## fork from https://github.com/Soooda/wqbook_pdf_spider 仅微调
+
 # 文泉书局电子书PDF下载
 
 本人<b style="color: red">从未以任何形式鼓励盗版</b>，本教程旨在分享技术，**供个人参考学习，切勿用于任何获利途径，转载请署名原作者**。本教程使用的书，为个人购买，也**只面向已购买文泉书局版权内容的用户参考**。

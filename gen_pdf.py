@@ -2,7 +2,7 @@ from reportlab.pdfgen import canvas
 from reportlab.lib.pagesizes import portrait
 
 img_dir = 'out/'
-PAGES = 320
+PAGES = 300
 width = 1441
 height = 2026
 
