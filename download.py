@@ -95,7 +95,7 @@ def right_click_save_as(segment):
     time.sleep(3)
     # time.sleep(5)
 
-
+# 浏览器关闭下载完成后显示下载内容，会遮挡界面导致漏下载，浏览器窗口最大化有可能避开遮挡
 driver.maximize_window() #将浏览器窗口最大化
 driver.get(ADDRESS)
 time.sleep(1)
