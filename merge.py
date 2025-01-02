@@ -2,7 +2,7 @@ from PIL import Image
 from os import makedirs
 from os.path import exists
 
-PAGES = 416 #总页数
+PAGES = 300 #总页数
 SPLIT = 6 #等分数
 sub_image_dir = 'temp/' #爬下的子图所在的文件夹路径
 save_dir = 'out/' #保存的文件夹路径
