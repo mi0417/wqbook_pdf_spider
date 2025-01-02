@@ -14,8 +14,8 @@ def find_missing_files(directory, total_pages, split):
     return missing_files
 
 # 设置参数
-directory = 'book_img/'
-total_pages = 416
+directory = 'temp/'
+total_pages = 300
 split = 6
 
 # 调用函数并输出结果
