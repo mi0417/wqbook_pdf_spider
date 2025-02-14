@@ -1,6 +1,6 @@
 多个下载地址：
 https://googlechromelabs.github.io/chrome-for-testing/
-下载地址：
+下载地址（替换对应chrome版本号）：
 https://storage.googleapis.com/chrome-for-testing-public/131.0.6778.205/win64/chromedriver-win64.zip
 selenium文档：
 https://www.selenium.dev/zh-cn/documentation/
