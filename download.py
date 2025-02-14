@@ -146,7 +146,7 @@ for page in range(startPage, PAGES + 1):
     for e in order:
         # time.sleep(2)
         right_click_save_as(pieces[e])
-        
+
 logger.info(f'等待10s后关闭浏览器')
 time.sleep(10)
 driver.quit()
